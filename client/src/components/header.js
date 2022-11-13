@@ -1,15 +1,15 @@
 import React from 'react';
-
+import logo from '../logo.png';
 const Header = () =>{
-    return   <header className="App-header">
+    return  <header className="App-header">
     <div className="container">
       <nav>
-        <div className="app-logo">EVENTLY</div>
+        <div className="app-logo"><img src={logo}/></div>
         <div className="nav-list">
           <ul>
-            <li>Map</li>
+            <li><a href="/map">Map</a></li>
             <li>Events</li>
-            <li><input type="text" placeholder="Search.."></input></li>
+            <li><input className="search" type="text" placeholder="Search.."></input></li>
           </ul>
         </div>
         <div className="log-reg">
@@ -19,7 +19,6 @@ const Header = () =>{
       </nav>
     </div>
   </header>
-
 }
 
 export default Header;

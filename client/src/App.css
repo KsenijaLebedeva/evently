@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #F9F8F5;
+}
+
 .App-header {
-    background-color: rgba(56, 56, 56, 0.128);
+    background-color: #6576C9;
 }
 
 .container {
@@ -16,12 +25,16 @@
 nav {
     padding: 20px;
     display: inline-flex;
+    align-items: center;
+    width: 100%;
 }
 
 nav ul {
     display: inline-flex;
     list-style: none;
     justify-content: center;
+    align-items: center;
+    width: 80%;
 }
 
 nav ul li {
@@ -29,12 +42,28 @@ nav ul li {
 }
 
 .log-reg {
+    display: flex;
     margin: auto;
+    right: 0;
+}
+
+.search {
+    width: 300px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid #3A3A3A;
+}
+
+.log-reg button:active {
+    background-color: #3A3A3A;
 }
 
 .log-reg button {
-    padding: 10px;
-    background-color: #FFFF;
+    color: #fff;
+    padding: 10px 30px;
+    background-color: #D18E3C;
     margin: 0 5px;
-    border-radius: 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    border: none;
 }
