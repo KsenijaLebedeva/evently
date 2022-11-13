@@ -1,0 +1,40 @@
+.App-header {
+    background-color: rgba(56, 56, 56, 0.128);
+}
+
+.container {
+    display: flex;
+    width: 1300px;
+    margin: auto;
+}
+
+.app-logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav {
+    padding: 20px;
+    display: inline-flex;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 0 20px;
+}
+
+.log-reg {
+    margin: auto;
+}
+
+.log-reg button {
+    padding: 10px;
+    background-color: #FFFF;
+    margin: 0 5px;
+    border-radius: 10px;
+}
