@@ -1,20 +1,32 @@
 import React from 'react';
 import './App.css';
-import Header from './components/header';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Map from './components/map';
+import Main from './components/Main';
+import Error from './components/error';
 import Login from './components/login';
 import Signup from './components/signup';
-import {Route} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/navbar';
 
+
+{/* page structure, main function*/}
 function App(){
-  return (
- 
+  return ( 
       <div className="App">
+       <Router>  
         <Header />
-        <div>
-        
-        </div>
-      </div>
+        {/*links to all components (pages)*/}
+          <Routes>
+            <Route path='/map' element={<Map />} /> 
+            <Route path='/login' element={<Login />} />
+            <Route path='/signup' element={<Signup />} />
+            <Route path='/' element={<Main />} />
+            <Route path='/*' element={<Error />} />
+          </Routes>
+        </Router>
+    </div>
+    
    
   )
 }
